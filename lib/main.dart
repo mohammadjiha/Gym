@@ -1,6 +1,8 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:gymtask/View/Screen/Creat_Screen/Creat_Screen.dart';
 import 'package:gymtask/View/Screen/Splash_Screen/Splash_Screen.dart';
+import 'package:gymtask/View/Screen/login_Screen/login_Screen.dart';
 import 'package:sizer/sizer.dart';
 
 import 'View/Screen/Sign_Screen/Sign_Screen.dart';
@@ -23,7 +25,9 @@ class MyApp extends StatelessWidget {
         ),
         routes: {
           '/': (context) => const SplashScreen(),
-          SignScreen.RoutName: (context) => SignScreen(),
+          SignScreen.RoutName: (context) => const SignScreen(),
+          LiginScreen.Route:(context)=>const LiginScreen(),
+          CreatScreen.RoutName:(context)=>const CreatScreen()
         },
       );
     });
