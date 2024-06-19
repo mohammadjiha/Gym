@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymtask/View/Screen/Creat_Screen/Creat_Screen.dart';
+import 'package:gymtask/View/Screen/Gender_Screen/Gender_Screen.dart';
 import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
 
@@ -135,21 +136,24 @@ class BodySiginScreen extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.02),
-          child: Container(
-            width: width * 0.92,
-            height: 6.h,
-            decoration: BoxDecoration(
-              color: const Color.fromRGBO(193, 35, 35, 1),
-              borderRadius: BorderRadius.circular(5),
-            ),
-            child: Center(
-              child: Text(
-                'Login',
-                style: GoogleFonts.faustina(
-                  textStyle: TextStyle(
-                    color: color.white,
-                    fontWeight: FontWeight.normal,
-                    fontSize: 20.sp,
+          child: GestureDetector(
+            onTap: (){Navigator.of(context).pushReplacementNamed(GenderScreen.RoutName);},
+            child: Container(
+              width: width * 0.92,
+              height: 6.h,
+              decoration: BoxDecoration(
+                color: const Color.fromRGBO(193, 35, 35, 1),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Center(
+                child: Text(
+                  'LOGIN',
+                  style: GoogleFonts.faustina(
+                    textStyle: TextStyle(
+                      color: color.white,
+                      fontWeight: FontWeight.normal,
+                      fontSize: 20.sp,
+                    ),
                   ),
                 ),
               ),

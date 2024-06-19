@@ -17,7 +17,7 @@ class BodyCreatScreen extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.only(top: height * 0.1),
+          padding: EdgeInsets.only(top: height * 0.1,bottom:height*0.05),
           child: Center(
             child: Text.rich(
               TextSpan(
@@ -141,7 +141,7 @@ class BodyCreatScreen extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                'Login',
+                'SIGNUP',
                 style: GoogleFonts.faustina(
                   textStyle: TextStyle(
                     color: color.white,
