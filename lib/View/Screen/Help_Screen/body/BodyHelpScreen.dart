@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:gymtask/View/Screen/Help_Screen/Widget/ChekBox.dart';
 import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
+
+import '../../Home_Screen/Home_Screen.dart';
 
 class BodyHelpScreen extends StatelessWidget {
   const BodyHelpScreen({super.key});
@@ -14,7 +17,7 @@ class BodyHelpScreen extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding:EdgeInsets.only(top: height * 0.1),
+          padding: EdgeInsets.only(top: height * 0.1),
           child: Center(
             child: Text.rich(
               TextSpan(
@@ -65,6 +68,53 @@ class BodyHelpScreen extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
         ),
+        Column(
+          children: [
+            const ChekBox(HelpName: 'Weight Loss'),
+            SizedBox(
+              height: height * 0.02,
+            ),
+            const ChekBox(HelpName: 'Better Sleeping Habit'),
+            SizedBox(
+              height: height * 0.02,
+            ),
+            const ChekBox(HelpName: 'Track My Nutrition'),
+            SizedBox(
+              height: height * 0.02,
+            ),
+            const ChekBox(HelpName: 'Improvr Overall Fitness'),
+            SizedBox(
+              height: height * 0.1,
+            ),
+            Container(
+              width: width * 0.92,
+              height: 6.h,
+              decoration: BoxDecoration(
+                color: const Color.fromRGBO(193, 35, 35, 1),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: GestureDetector(
+                onTap: () {
+                  if(true){}
+                  Navigator.of(context).pushNamed(HomeScreen.RoutName);
+                },
+                child: Center(
+                  child: Text(
+                    'Get Stared',
+                    style: GoogleFonts.faustina(
+                      textStyle: TextStyle(
+                        color: color.white,
+                        fontWeight: FontWeight.normal,
+                        fontSize: 20.sp,
+                      ),
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        )
       ],
     );
   }

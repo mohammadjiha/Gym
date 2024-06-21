@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gymtask/View/Screen/Creat_Screen/Creat_Screen.dart';
 import 'package:gymtask/View/Screen/Gender_Screen/Gender_Screen.dart';
 import 'package:gymtask/View/Screen/Help_Screen/Help_Screen.dart';
+import 'package:gymtask/View/Screen/Home_Screen/Home_Screen.dart';
 import 'package:gymtask/View/Screen/Splash_Screen/Splash_Screen.dart';
 import 'package:gymtask/View/Screen/login_Screen/login_Screen.dart';
 import 'package:sizer/sizer.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
           CreatScreen.RoutName:(context)=>const CreatScreen(),
           GenderScreen.RoutName:(context)=>const GenderScreen(),
           HelpScreen.RoutName:(context)=>const HelpScreen(),
+          HomeScreen.RoutName:(context)=> const HomeScreen(),
         },
       );
     });

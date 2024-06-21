@@ -106,7 +106,7 @@ class BodyGenderScreen extends StatelessWidget {
             textStyle: TextStyle(
               fontWeight: FontWeight.normal,
               color: const Color.fromRGBO(119, 119, 119, 1),
-              fontSize: 15.sp,
+              fontSize: 10.sp,
             ),
           ),
           textAlign: TextAlign.center,
