@@ -131,7 +131,7 @@ class BodyCreatScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.02),
+          padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.01),
           child: Container(
             width: width * 0.92,
             height: 6.h,
@@ -154,7 +154,7 @@ class BodyCreatScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(bottom: height * 0.02),
+          padding: EdgeInsets.only(bottom: height * 0.01),
           child: Text(
             'OR',
             style: GoogleFonts.faustina(
@@ -182,7 +182,7 @@ class BodyCreatScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: height * 0.05),
+          padding: EdgeInsets.only(top: height * 0.02),
           child: Center(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,

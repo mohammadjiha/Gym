@@ -40,7 +40,7 @@ class Grid extends StatelessWidget {
                 textStyle: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: const Color.fromRGBO(119, 119, 119, 1),
-                  fontSize: 9.sp,
+                  fontSize: 8.sp,
                 ),
               ),
             ),

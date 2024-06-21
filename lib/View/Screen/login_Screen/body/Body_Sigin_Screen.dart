@@ -135,7 +135,7 @@ class BodySiginScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.02),
+          padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.01),
           child: GestureDetector(
             onTap: (){Navigator.of(context).pushReplacementNamed(GenderScreen.RoutName);},
             child: Container(
@@ -161,14 +161,14 @@ class BodySiginScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(bottom: height * 0.02),
+          padding: EdgeInsets.only(bottom: height * 0.01),
           child: Text(
             'OR',
             style: GoogleFonts.faustina(
               textStyle: TextStyle(
                 color: const Color.fromRGBO(119, 119, 119, 1),
                 fontWeight: FontWeight.normal,
-                fontSize: 17.sp,
+                fontSize: 15.sp,
               ),
             ),
             textAlign: TextAlign.center,
@@ -189,7 +189,7 @@ class BodySiginScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: height * 0.05),
+          padding: EdgeInsets.only(top: height * 0.02),
           child: Center(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
