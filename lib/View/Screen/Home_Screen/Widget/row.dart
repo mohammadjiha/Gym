@@ -56,6 +56,7 @@ class RowWidget extends StatelessWidget {
                   child: Icon(
                     Icons.add,
                     color: color.white,
+                    size: 13.sp,
                   ),
                 ),
               ),
