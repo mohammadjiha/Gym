@@ -24,7 +24,6 @@ class _ChekBoxState extends State<ChekBox> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final width = size.width;
     final height = size.height;
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 5.w),

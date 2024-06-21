@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymtask/View/Screen/Creat_Screen/Widget/textfield.dart';
@@ -9,6 +8,9 @@ import 'package:sizer/sizer.dart';
 import '../../login_Screen/Widget/login_medai.dart';
 
 class BodyCreatScreen extends StatelessWidget {
+  const BodyCreatScreen({super.key});
+
+  @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final width = size.width;
@@ -48,7 +50,7 @@ class BodyCreatScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(left: width * 0.23),
           child: Container(
-            decoration: BoxDecoration(color: color.black),
+            decoration: const BoxDecoration(color: color.black),
             height: 2,
             width: width * 0.20,
             child: const Text(''),
@@ -131,7 +133,7 @@ class BodyCreatScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.02),
+          padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.01),
           child: Container(
             width: width * 0.92,
             height: 6.h,
@@ -154,7 +156,7 @@ class BodyCreatScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(bottom: height * 0.02),
+          padding: EdgeInsets.only(bottom: height * 0.01),
           child: Text(
             'OR',
             style: GoogleFonts.faustina(
@@ -182,7 +184,7 @@ class BodyCreatScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: height * 0.05),
+          padding: EdgeInsets.only(top: height * 0.02),
           child: Center(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -200,7 +202,7 @@ class BodyCreatScreen extends StatelessWidget {
                 GestureDetector(
                   onTap: () {
                     Navigator.of(context)
-                        .pushReplacementNamed(LiginScreen.Route);
+                        .pushReplacementNamed(LiginScreen.route);
                   },
                   child: Text(
                     'Login',

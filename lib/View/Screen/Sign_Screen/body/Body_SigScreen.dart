@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymtask/View/Screen/Creat_Screen/Creat_Screen.dart';
@@ -57,7 +58,7 @@ class BodySignScreen extends StatelessWidget {
             bottom: height * 0.4,
             right: width * 0.25,
             child: Container(
-              decoration: BoxDecoration(color: color.white),
+              decoration: const BoxDecoration(color: color.white),
               height: 2,
               width: width * 0.23,
               child: const Text(''),
@@ -94,7 +95,7 @@ class BodySignScreen extends StatelessWidget {
               padding: EdgeInsets.only(left: 4.w, right: 4.w),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.of(context).pushNamed(LiginScreen.Route);
+                  Navigator.of(context).pushNamed(LiginScreen.route);
                 },
                 child: Container(
                   width: width * 0.92,

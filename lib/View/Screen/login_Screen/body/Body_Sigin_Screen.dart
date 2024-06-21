@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymtask/View/Screen/Creat_Screen/Creat_Screen.dart';
@@ -52,7 +52,7 @@ class BodySiginScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(left: width * 0.23),
           child: Container(
-            decoration: BoxDecoration(color: color.black),
+            decoration: const BoxDecoration(color: color.black),
             height: 2,
             width: width * 0.20,
             child: const Text(''),
@@ -135,9 +135,9 @@ class BodySiginScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.02),
+          padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.01),
           child: GestureDetector(
-            onTap: (){Navigator.of(context).pushReplacementNamed(GenderScreen.RoutName);},
+            onTap: (){Navigator.of(context).pushReplacementNamed(GenderScreen.routName);},
             child: Container(
               width: width * 0.92,
               height: 6.h,
@@ -161,14 +161,14 @@ class BodySiginScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(bottom: height * 0.02),
+          padding: EdgeInsets.only(bottom: height * 0.01),
           child: Text(
             'OR',
             style: GoogleFonts.faustina(
               textStyle: TextStyle(
                 color: const Color.fromRGBO(119, 119, 119, 1),
                 fontWeight: FontWeight.normal,
-                fontSize: 17.sp,
+                fontSize: 15.sp,
               ),
             ),
             textAlign: TextAlign.center,
@@ -189,7 +189,7 @@ class BodySiginScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: height * 0.05),
+          padding: EdgeInsets.only(top: height * 0.02),
           child: Center(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,

@@ -35,7 +35,7 @@ class _SplashBodyState extends State<SplashBody> {
               isLastPage = index == 2;
             });
           },
-          children: [
+          children: const [
             PageView1(),
             PageView1(),
             PageView1(),
@@ -81,7 +81,7 @@ class _SplashBodyState extends State<SplashBody> {
                     onTap: () {
                       if (isLastPage) {
                         Navigator.of(context)
-                            .pushReplacementNamed(SignScreen.RoutName);
+                            .pushReplacementNamed(SignScreen.routName);
                       } else {
                         controller.nextPage(
                           duration: const Duration(milliseconds: 500),

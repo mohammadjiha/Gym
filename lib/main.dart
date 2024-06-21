@@ -28,11 +28,11 @@ class MyApp extends StatelessWidget {
         ),
         routes: {
           '/': (context) => const SplashScreen(),
-          SignScreen.RoutName: (context) => const SignScreen(),
-          LiginScreen.Route:(context)=>const LiginScreen(),
+          SignScreen.routName: (context) => const SignScreen(),
+          LiginScreen.route:(context)=>const LiginScreen(),
           CreatScreen.RoutName:(context)=>const CreatScreen(),
-          GenderScreen.RoutName:(context)=>const GenderScreen(),
-          HelpScreen.RoutName:(context)=>const HelpScreen(),
+          GenderScreen.routName:(context)=>const GenderScreen(),
+          HelpScreen.routName:(context)=>const HelpScreen(),
           HomeScreen.RoutName:(context)=> const HomeScreen(),
         },
       );

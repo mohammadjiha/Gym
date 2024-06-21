@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymtask/View/Screen/Gender_Screen/Widget/conter_gender.dart';
@@ -48,7 +49,7 @@ class BodyGenderScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(left: width * 0.23),
           child: Container(
-            decoration: BoxDecoration(color: color.black),
+            decoration: const BoxDecoration(color: color.black),
             height: 2,
             width: width * 0.20,
             child: const Text(''),
@@ -67,16 +68,16 @@ class BodyGenderScreen extends StatelessWidget {
             ),
           ),
         ),
-        const ConterGender(NameImage: 'male 1.png'),
+        const ConterGender(nameImage: 'male 1.png'),
         SizedBox(
           height: height * 0.03,
         ),
-        const ConterGender(NameImage: 'female 1.png'),
+        const ConterGender(nameImage: 'female 1.png'),
         Padding(
           padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.02),
           child: GestureDetector(
             onTap: () {
-              Navigator.of(context).pushNamed(HelpScreen.RoutName);
+              Navigator.of(context).pushNamed(HelpScreen.routName);
             },
             child: Container(
               width: width * 0.92,

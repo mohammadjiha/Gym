@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gymtask/View/Screen/Creat_Screen/body/Body_Creat_Screen.dart';
 
@@ -8,7 +7,7 @@ class CreatScreen extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: BodyCreatScreen(),
     );
   }
