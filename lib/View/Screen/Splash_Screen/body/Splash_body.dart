@@ -5,6 +5,8 @@ import 'package:gymtask/View/Screen/Splash_Screen/Widget/pageview.dart';
 import 'package:sizer/sizer.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import '../../../../generated/l10n.dart';
+
 class SplashBody extends StatefulWidget {
   const SplashBody({super.key});
 
@@ -60,7 +62,7 @@ class _SplashBodyState extends State<SplashBody> {
                       controller.jumpToPage(2);
                     },
                     child: Text(
-                      'Skip',
+                      S.of(context).skip,
                       style: GoogleFonts.openSans(
                         textStyle: TextStyle(
                           fontSize: 10.sp,
@@ -90,7 +92,7 @@ class _SplashBodyState extends State<SplashBody> {
                       }
                     },
                     child: Text(
-                      isLastPage ? 'Sign Up' : 'Next',
+                      isLastPage ? S.of(context).signUp : S.of(context).next,
                       style: GoogleFonts.openSans(
                         textStyle: TextStyle(
                           fontSize: 10.sp,

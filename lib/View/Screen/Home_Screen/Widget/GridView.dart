@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../../../generated/l10n.dart';
+
 class Grid extends StatelessWidget {
   final String Title;
   const Grid({super.key, required this.Title,});
@@ -35,7 +37,7 @@ class Grid extends StatelessWidget {
             ),
             const SizedBox(height: 8.0),
             Text(
-              'Walking is simple,\n yet powerful\n exercise for your\n body',
+              S.of(context).walkingIsSimplenYetPowerfulnExerciseForYournBody,
               style: GoogleFonts.faustina(
                 textStyle: TextStyle(
                   fontWeight: FontWeight.bold,

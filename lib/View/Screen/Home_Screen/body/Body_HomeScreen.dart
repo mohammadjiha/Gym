@@ -6,6 +6,8 @@ import 'package:gymtask/View/Screen/Home_Screen/Widget/row.dart';
 import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../../../generated/l10n.dart';
+
 class BodyHomeScreen extends StatelessWidget {
   const BodyHomeScreen({super.key});
 
@@ -15,10 +17,10 @@ class BodyHomeScreen extends StatelessWidget {
     final width = size.width;
     final height = size.height;
     final List<String> titles = [
-      'Shoulder Press',
-      'Jogging',
-      'Shoulder Press',
-      'Jogging'
+      S.of(context).shoulderPress,
+      S.of(context).jogging,
+      S.of(context).shoulderPress,
+      S.of(context).jogging
     ];
     return SingleChildScrollView(
       child: Column(
@@ -28,7 +30,7 @@ class BodyHomeScreen extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.only(left: width * 0.05, top: height * 0.02),
               child: Text(
-                'Workout Exercises',
+                S.of(context).workoutExercises,
                 style: GoogleFonts.faustina(
                     textStyle: TextStyle(
                   fontWeight: FontWeight.normal,
@@ -48,30 +50,31 @@ class BodyHomeScreen extends StatelessWidget {
                   SizedBox(
                     width: width * 0.04,
                   ),
-                  const RowWidget(
-                    NameImage: 'young-fitness-man-studio_7502-5004 1.png',
-                    NameTitle: 'Abs',
-                    NameTitle2: 'Perfection',
+                  RowWidget(
+                    NameImage:
+                        'young-fitness-man-studio_7502-5004 1.png',
+                    NameTitle: S.of(context).abs,
+                    NameTitle2: S.of(context).perfection,
                     NameImage2: 'Rectangle 13.png',
                   ),
                   SizedBox(
                     width: width * 0.05,
                   ),
-                  const RowWidget(
+                  RowWidget(
                     NameImage:
                         'front-view-woman-with-dumbbells-copy-space_23-2148499217 1.png',
-                    NameTitle: 'Good',
-                    NameTitle2: 'Cardio',
+                    NameTitle: S.of(context).good,
+                    NameTitle2: S.of(context).cardio,
                     NameImage2: 'Rectangle 13.png',
                   ),
                   SizedBox(
                     width: width * 0.05,
                   ),
-                  const RowWidget(
+                  RowWidget(
                     NameImage:
                         'full-shot-woman-exercising-with-dumbbell_23-2148768890 1.png',
-                    NameTitle: 'Arms',
-                    NameTitle2: 'Stretching',
+                    NameTitle: S.of(context).arms,
+                    NameTitle2: S.of(context).stretching,
                     NameImage2: 'Rectangle 13.png',
                   ),
                   SizedBox(
@@ -86,7 +89,7 @@ class BodyHomeScreen extends StatelessWidget {
             child: Align(
               alignment: Alignment.topLeft,
               child: Text(
-                'Training Plan',
+                S.of(context).trainingPlan,
                 style: GoogleFonts.faustina(
                     textStyle: TextStyle(
                   fontWeight: FontWeight.normal,

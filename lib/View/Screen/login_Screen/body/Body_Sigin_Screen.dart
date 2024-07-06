@@ -6,6 +6,7 @@ import 'package:gymtask/View/Screen/Gender_Screen/Gender_Screen.dart';
 import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../../../generated/l10n.dart';
 import '../Widget/login_medai.dart';
 
 class BodySiginScreen extends StatelessWidget {
@@ -35,7 +36,7 @@ class BodySiginScreen extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: 'Kit',
+                    text:'Kit',
                     style: GoogleFonts.faustina(
                       textStyle: TextStyle(
                         fontWeight: FontWeight.normal,
@@ -61,7 +62,7 @@ class BodySiginScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(top: height * 0.1),
           child: Text(
-            'Welcome!',
+            S.of(context).welcome,
             style: GoogleFonts.faustina(
               textStyle: TextStyle(
                 color: color.black,
@@ -74,7 +75,7 @@ class BodySiginScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(bottom: height * 0.05),
           child: Text(
-            'Sign into Your Account',
+            S.of(context).signIntoYourAccount,
             style: GoogleFonts.faustina(
               textStyle: TextStyle(
                 color: const Color.fromRGBO(119, 119, 110, 1),
@@ -94,7 +95,7 @@ class BodySiginScreen extends StatelessWidget {
                 decoration: InputDecoration(
                   suffixIcon: const Icon(Icons.email_outlined),
                   suffixIconColor: const Color.fromRGBO(119, 119, 119, 1),
-                  hintText: 'Email Id*',
+                  hintText: S.of(context).emailId,
                   hintStyle: GoogleFonts.faustina(
                     fontSize: 13.sp,
                     color: const Color.fromRGBO(119, 119, 119, 1),
@@ -108,7 +109,7 @@ class BodySiginScreen extends StatelessWidget {
                 decoration: InputDecoration(
                   suffixIcon: const Icon(Icons.lock),
                   suffixIconColor: const Color.fromRGBO(119, 119, 119, 1),
-                  hintText: 'Password*',
+                  hintText: S.of(context).password,
                   hintStyle: GoogleFonts.faustina(
                     fontSize: 13.sp,
                     color: const Color.fromRGBO(119, 119, 119, 1),
@@ -123,7 +124,7 @@ class BodySiginScreen extends StatelessWidget {
           child: Align(
             alignment: Alignment.bottomRight,
             child: Text(
-              'Forgot Password?',
+              S.of(context).forgotPassword,
               style: GoogleFonts.faustina(
                 textStyle: TextStyle(
                   color: const Color.fromRGBO(119, 119, 119, 1),
@@ -147,7 +148,7 @@ class BodySiginScreen extends StatelessWidget {
               ),
               child: Center(
                 child: Text(
-                  'LOGIN',
+                  S.of(context).login,
                   style: GoogleFonts.faustina(
                     textStyle: TextStyle(
                       color: color.white,
@@ -163,7 +164,7 @@ class BodySiginScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(bottom: height * 0.01),
           child: Text(
-            'OR',
+            S.of(context).or,
             style: GoogleFonts.faustina(
               textStyle: TextStyle(
                 color: const Color.fromRGBO(119, 119, 119, 1),
@@ -195,7 +196,7 @@ class BodySiginScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Don’t have an account?\t',
+                  S.of(context).dontHaveAnAccountt,
                   style: GoogleFonts.faustina(
                     textStyle: TextStyle(
                       fontWeight: FontWeight.normal,
@@ -207,7 +208,7 @@ class BodySiginScreen extends StatelessWidget {
                 GestureDetector(
                   onTap: () {Navigator.of(context).pushNamed(CreatScreen.RoutName);},
                   child: Text(
-                    'Signup',
+                    S.of(context).signup,
                     style: GoogleFonts.faustina(
                       textStyle: TextStyle(
                         fontWeight: FontWeight.bold,

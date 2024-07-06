@@ -7,6 +7,8 @@ import 'package:gymtask/View/Screen/Help_Screen/Help_Screen.dart';
 import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../../../generated/l10n.dart';
+
 class BodyGenderScreen extends StatelessWidget {
   const BodyGenderScreen({super.key});
 
@@ -22,7 +24,7 @@ class BodyGenderScreen extends StatelessWidget {
           child: Center(
             child: Text.rich(
               TextSpan(
-                text: 'Fit\t',
+                text: S.of(context).fitt,
                 style: GoogleFonts.faustina(
                   textStyle: TextStyle(
                     fontWeight: FontWeight.normal,
@@ -32,7 +34,7 @@ class BodyGenderScreen extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: 'Kit',
+                    text: S.of(context).kit,
                     style: GoogleFonts.faustina(
                       textStyle: TextStyle(
                         fontWeight: FontWeight.normal,
@@ -58,7 +60,7 @@ class BodyGenderScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.03),
           child: Text(
-            'Gender',
+            S.of(context).gender,
             style: GoogleFonts.faustina(
               textStyle: TextStyle(
                 color: color.black,
@@ -88,7 +90,7 @@ class BodyGenderScreen extends StatelessWidget {
               ),
               child: Center(
                 child: Text(
-                  'NEXT',
+                  S.of(context).next,
                   style: GoogleFonts.faustina(
                     textStyle: TextStyle(
                       color: color.white,
@@ -102,7 +104,7 @@ class BodyGenderScreen extends StatelessWidget {
           ),
         ),
         Text(
-          'To give you a better experrince \n we need to know your Gender',
+          S.of(context).toGiveYouABetterExperrinceNWeNeedTo,
           style: GoogleFonts.faustina(
             textStyle: TextStyle(
               fontWeight: FontWeight.normal,

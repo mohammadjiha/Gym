@@ -5,6 +5,7 @@ import 'package:gymtask/View/Screen/login_Screen/login_Screen.dart';
 import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../../../generated/l10n.dart';
 import '../../login_Screen/Widget/login_medai.dart';
 
 class BodyCreatScreen extends StatelessWidget {
@@ -33,7 +34,7 @@ class BodyCreatScreen extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: 'Kit',
+                    text: 'Kit\t',
                     style: GoogleFonts.faustina(
                       textStyle: TextStyle(
                         fontWeight: FontWeight.normal,
@@ -59,7 +60,7 @@ class BodyCreatScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(bottom: height * 0.05),
           child: Text(
-            'Create Your Account',
+            S.of(context).createYourAccount,
             style: GoogleFonts.faustina(
               textStyle: TextStyle(
                 color: const Color.fromRGBO(119, 119, 110, 1),
@@ -73,12 +74,12 @@ class BodyCreatScreen extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 5.w),
           child: Column(
             children: [
-              const textfield(hint: 'Username*', icon: Icon(Icons.person)),
+               textfield(hint: S.of(context).username, icon: const Icon(Icons.person)),
               SizedBox(height: height * 0.02),
-              const textfield(
-                  hint: 'Email Id*', icon: Icon(Icons.email_outlined)),
+               textfield(
+                  hint: S.of(context).emailId, icon: const Icon(Icons.email_outlined)),
               SizedBox(height: height * 0.02),
-              const textfield(hint: 'Password*', icon: Icon(Icons.lock)),
+               textfield(hint: S.of(context).password, icon: const Icon(Icons.lock)),
             ],
           ),
         ),
@@ -106,7 +107,7 @@ class BodyCreatScreen extends StatelessWidget {
                 ),
                 Text.rich(
                   TextSpan(
-                    text: 'I Read and agree\t',
+                    text: S.of(context).iReadAndAgreet,
                     style: GoogleFonts.faustina(
                       textStyle: TextStyle(
                         fontWeight: FontWeight.normal,
@@ -116,7 +117,7 @@ class BodyCreatScreen extends StatelessWidget {
                     ),
                     children: [
                       TextSpan(
-                        text: 'to Terms & Conditions',
+                        text: S.of(context).toTermsConditions,
                         style: GoogleFonts.faustina(
                           textStyle: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -143,7 +144,7 @@ class BodyCreatScreen extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                'SIGNUP',
+                S.of(context).signup,
                 style: GoogleFonts.faustina(
                   textStyle: TextStyle(
                     color: color.white,
@@ -158,7 +159,7 @@ class BodyCreatScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(bottom: height * 0.01),
           child: Text(
-            'OR',
+            S.of(context).or,
             style: GoogleFonts.faustina(
               textStyle: TextStyle(
                 color: const Color.fromRGBO(119, 119, 119, 1),
@@ -190,7 +191,7 @@ class BodyCreatScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Don’t have an account?\t',
+                  S.of(context).dontHaveAnAccountt,
                   style: GoogleFonts.faustina(
                     textStyle: TextStyle(
                       fontWeight: FontWeight.normal,
@@ -205,7 +206,7 @@ class BodyCreatScreen extends StatelessWidget {
                         .pushReplacementNamed(LiginScreen.route);
                   },
                   child: Text(
-                    'Login',
+                    S.of(context).login,
                     style: GoogleFonts.faustina(
                       textStyle: TextStyle(
                         fontWeight: FontWeight.bold,

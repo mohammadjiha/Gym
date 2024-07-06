@@ -1,9 +1,11 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymtask/View/Screen/Help_Screen/Widget/ChekBox.dart';
 import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../../../generated/l10n.dart';
 import '../../Home_Screen/Home_Screen.dart';
 
 class BodyHelpScreen extends StatelessWidget {
@@ -21,7 +23,7 @@ class BodyHelpScreen extends StatelessWidget {
           child: Center(
             child: Text.rich(
               TextSpan(
-                text: 'Fit\t',
+                text: S.of(context).fitt,
                 style: GoogleFonts.faustina(
                   textStyle: TextStyle(
                     fontWeight: FontWeight.normal,
@@ -31,7 +33,7 @@ class BodyHelpScreen extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: 'Kit',
+                    text: S.of(context).kit,
                     style: GoogleFonts.faustina(
                       textStyle: TextStyle(
                         fontWeight: FontWeight.normal,
@@ -48,7 +50,7 @@ class BodyHelpScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(left: width * 0.23),
           child: Container(
-            decoration: BoxDecoration(color: color.black),
+            decoration: const BoxDecoration(color: color.black),
             height: 2,
             width: width * 0.20,
             child: const Text(''),
@@ -57,7 +59,7 @@ class BodyHelpScreen extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(top: height * 0.05, bottom: height * 0.03),
           child: Text(
-            'Let us know how \n we can help you',
+            S.of(context).letUsKnowHowNWeCanHelpYou,
             style: GoogleFonts.faustina(
               textStyle: TextStyle(
                 color: color.black,
@@ -70,19 +72,19 @@ class BodyHelpScreen extends StatelessWidget {
         ),
         Column(
           children: [
-            const ChekBox(HelpName: 'Weight Loss'),
+             ChekBox(HelpName: S.of(context).weightLoss),
             SizedBox(
               height: height * 0.02,
             ),
-            const ChekBox(HelpName: 'Better Sleeping Habit'),
+             ChekBox(HelpName: S.of(context).betterSleepingHabit),
             SizedBox(
               height: height * 0.02,
             ),
-            const ChekBox(HelpName: 'Track My Nutrition'),
+             ChekBox(HelpName: S.of(context).trackMyNutrition),
             SizedBox(
               height: height * 0.02,
             ),
-            const ChekBox(HelpName: 'Improvr Overall Fitness'),
+             ChekBox(HelpName: S.of(context).improveOverallFitness),
             SizedBox(
               height: height * 0.1,
             ),
@@ -100,7 +102,7 @@ class BodyHelpScreen extends StatelessWidget {
                 },
                 child: Center(
                   child: Text(
-                    'Get Stared',
+                    S.of(context).getStared,
                     style: GoogleFonts.faustina(
                       textStyle: TextStyle(
                         color: color.white,

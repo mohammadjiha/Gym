@@ -5,6 +5,8 @@ import 'package:gymtask/View/Screen/Home_Screen/body/Body_HomeScreen.dart';
 import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../../generated/l10n.dart';
+
 class HomeScreen extends StatefulWidget {
   static const String RoutName = 'HomeScreen';
 
@@ -31,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
           )
         ],
         title: Text(
-          'Home',
+          S.of(context).home,
           style: GoogleFonts.faustina(
               color: color.white,
               fontSize: 20.sp,
@@ -46,22 +48,22 @@ class _HomeScreenState extends State<HomeScreen> {
         unselectedFontSize: 8.sp,
         selectedItemColor: color.Red,
         unselectedItemColor: const Color.fromRGBO(119, 119, 119, 1),
-        items: const [
+        items:  [
           BottomNavigationBarItem(
-            label: 'Home',
-            icon: Icon(Icons.home),
+            label: S.of(context).home,
+            icon: const Icon(Icons.home),
           ),
           BottomNavigationBarItem(
-            label: 'Notfaction',
-            icon: Icon(Icons.add_alert_outlined),
+            label: S.of(context).notification,
+            icon: const Icon(Icons.add_alert_outlined),
           ),
           BottomNavigationBarItem(
-            label: 'Profile',
-            icon: Icon(Icons.person),
+            label: S.of(context).profile,
+            icon: const Icon(Icons.person),
           ),
           BottomNavigationBarItem(
-            label: 'Messages',
-            icon: Icon(Icons.message_outlined),
+            label: S.of(context).messages,
+            icon: const Icon(Icons.message_outlined),
           ),
         ],
         currentIndex: _crentindex,

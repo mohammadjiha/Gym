@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../../../generated/l10n.dart';
+
 class PageView1 extends StatelessWidget {
   const PageView1({super.key});
 
@@ -46,7 +48,7 @@ class PageView1 extends StatelessWidget {
           left: width * 0.1,
           right: width * 0.1,
           child: Text(
-            'Welcome To FitKit UI Kit',
+            S.of(context).welcomeToFitkitUiKit,
             style: GoogleFonts.openSans(
               textStyle: TextStyle(
                 fontSize: 21.sp,
