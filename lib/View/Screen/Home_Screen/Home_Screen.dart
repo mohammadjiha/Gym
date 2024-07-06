@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymtask/View/Screen/Home_Screen/body/Body_HomeScreen.dart';
@@ -6,6 +6,7 @@ import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../generated/l10n.dart';
+import '../Sign_Screen/Sign_Screen.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String RoutName = 'HomeScreen';
@@ -32,12 +33,15 @@ class _HomeScreenState extends State<HomeScreen> {
             size: 30.sp,
           )
         ],
-        title: Text(
-          S.of(context).home,
-          style: GoogleFonts.faustina(
-              color: color.white,
-              fontSize: 20.sp,
-              fontWeight: FontWeight.normal),
+        title: InkWell(
+          onTap: (){Navigator.of(context).pushNamed(SignScreen.routName);},
+          child: Text(
+            S.of(context).home,
+            style: GoogleFonts.faustina(
+                color: color.white,
+                fontSize: 20.sp,
+                fontWeight: FontWeight.normal),
+          ),
         ),
         centerTitle: true,
       ),

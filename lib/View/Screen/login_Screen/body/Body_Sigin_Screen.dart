@@ -182,9 +182,9 @@ class BodySiginScreen extends StatelessWidget {
             children: [
               const Spacer(flex: 3),
               LoginMeadi(
-                  colorContener: color.facebook, NameImage: 'fasbook.png'),
+                  colorContener: color.facebook, nameImage: 'fasbook.png'),
               const Spacer(),
-              LoginMeadi(colorContener: color.twitter, NameImage: 't.png'),
+              LoginMeadi(colorContener: color.twitter, nameImage: 't.png'),
               const Spacer(flex: 3),
             ],
           ),

@@ -72,19 +72,19 @@ class BodyHelpScreen extends StatelessWidget {
         ),
         Column(
           children: [
-             ChekBox(HelpName: S.of(context).weightLoss),
+             ChekBox(n: S.of(context).weightLoss),
             SizedBox(
               height: height * 0.02,
             ),
-             ChekBox(HelpName: S.of(context).betterSleepingHabit),
+             ChekBox(n: S.of(context).betterSleepingHabit),
             SizedBox(
               height: height * 0.02,
             ),
-             ChekBox(HelpName: S.of(context).trackMyNutrition),
+             ChekBox(n: S.of(context).trackMyNutrition),
             SizedBox(
               height: height * 0.02,
             ),
-             ChekBox(HelpName: S.of(context).improveOverallFitness),
+             ChekBox(n: S.of(context).improveOverallFitness),
             SizedBox(
               height: height * 0.1,
             ),

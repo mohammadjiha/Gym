@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymtask/const/const.dart';
@@ -7,8 +7,8 @@ import 'package:sizer/sizer.dart';
 import '../../../../generated/l10n.dart';
 
 class Grid extends StatelessWidget {
-  final String Title;
-  const Grid({super.key, required this.Title,});
+  final String title;
+  const Grid({super.key, required this.title,});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,7 +26,7 @@ class Grid extends StatelessWidget {
             Image.asset('assets/image/Group.png'),
             const SizedBox(height: 8.0),
             Text(
-              Title,
+              title,
               style: GoogleFonts.faustina(
                 textStyle: TextStyle(
                   fontWeight: FontWeight.normal,

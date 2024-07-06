@@ -51,31 +51,31 @@ class BodyHomeScreen extends StatelessWidget {
                     width: width * 0.04,
                   ),
                   RowWidget(
-                    NameImage:
+                    nameImage:
                         'young-fitness-man-studio_7502-5004 1.png',
-                    NameTitle: S.of(context).abs,
-                    NameTitle2: S.of(context).perfection,
-                    NameImage2: 'Rectangle 13.png',
+                    nameTitle: S.of(context).abs,
+                    nameTitle2: S.of(context).perfection,
+                    nameImage2: 'Rectangle 13.png',
                   ),
                   SizedBox(
                     width: width * 0.05,
                   ),
                   RowWidget(
-                    NameImage:
+                    nameImage:
                         'front-view-woman-with-dumbbells-copy-space_23-2148499217 1.png',
-                    NameTitle: S.of(context).good,
-                    NameTitle2: S.of(context).cardio,
-                    NameImage2: 'Rectangle 13.png',
+                    nameTitle: S.of(context).good,
+                    nameTitle2: S.of(context).cardio,
+                    nameImage2: 'Rectangle 13.png',
                   ),
                   SizedBox(
                     width: width * 0.05,
                   ),
                   RowWidget(
-                    NameImage:
+                    nameImage:
                         'full-shot-woman-exercising-with-dumbbell_23-2148768890 1.png',
-                    NameTitle: S.of(context).arms,
-                    NameTitle2: S.of(context).stretching,
-                    NameImage2: 'Rectangle 13.png',
+                    nameTitle: S.of(context).arms,
+                    nameTitle2: S.of(context).stretching,
+                    nameImage2: 'Rectangle 13.png',
                   ),
                   SizedBox(
                     width: width * 0.05,
@@ -115,7 +115,7 @@ class BodyHomeScreen extends StatelessWidget {
                 itemCount: titles.length,
                 itemBuilder: (context, index) {
                   return Grid(
-                    Title: titles[index],
+                    title: titles[index],
                   );
                 },
               ),

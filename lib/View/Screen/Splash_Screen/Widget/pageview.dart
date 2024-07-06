@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:gymtask/l10n/app_locale.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../generated/l10n.dart';
 
-class PageView1 extends StatelessWidget {
+class PageView1 extends StatefulWidget {
   const PageView1({super.key});
 
+  @override
+  State<PageView1> createState() => _PageView1State();
+}
+
+class _PageView1State extends State<PageView1> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -43,6 +49,12 @@ class PageView1 extends StatelessWidget {
             ),
           ),
         ),
+        Positioned(
+            top: 0,
+            left: 0,
+            child: ElevatedButton(onPressed: (){setState(() {
+              AppLocale().changeLanguage();
+            });}, child: Text(S.of(context).changelanguage))),
         Positioned(
           bottom: height * 0.2,
           left: width * 0.1,

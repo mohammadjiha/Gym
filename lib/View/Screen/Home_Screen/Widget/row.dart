@@ -1,21 +1,21 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
 
 class RowWidget extends StatelessWidget {
-  final String NameImage;
-  final String NameImage2;
-  final String NameTitle;
-  final String NameTitle2;
+  final String nameImage;
+  final String nameImage2;
+  final String nameTitle;
+  final String nameTitle2;
 
   const RowWidget(
       {super.key,
-        required this.NameImage,
-        required this.NameTitle,
-        required this.NameTitle2,
-        required this.NameImage2});
+        required this.nameImage,
+        required this.nameTitle,
+        required this.nameTitle2,
+        required this.nameImage2});
 
   @override
   Widget build(BuildContext context) {
@@ -32,13 +32,13 @@ class RowWidget extends StatelessWidget {
           children: [
             Positioned.fill(
               child: Image.asset(
-                'assets/image/$NameImage',
+                'assets/image/$nameImage',
                 fit: BoxFit.cover,
               ),
             ),
             Positioned.fill(
               child: Image.asset(
-                'assets/image/$NameImage2',
+                'assets/image/$nameImage2',
                 fit: BoxFit.cover,
               ),
             ),
@@ -65,7 +65,7 @@ class RowWidget extends StatelessWidget {
               bottom: MediaQuery.of(context).size.height * 0.01,
               left: MediaQuery.of(context).size.width * 0.02,
               child: Text(
-                '$NameTitle\n$NameTitle2',
+                '$nameTitle\n$nameTitle2',
                 style: GoogleFonts.faustina(
                   fontSize: 15.sp,
                   color: color.white,

@@ -1,13 +1,13 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymtask/const/const.dart';
 import 'package:sizer/sizer.dart';
 
 class ChekBox extends StatefulWidget {
-  final String HelpName;
+  final String n;
 
-  const ChekBox({super.key, required this.HelpName});
+  const ChekBox({super.key, required this.n});
 
   @override
   State<ChekBox> createState() => _ChekBoxState();
@@ -41,7 +41,7 @@ class _ChekBoxState extends State<ChekBox> {
             children: [
               Align(
                 alignment: Alignment.centerLeft,
-                child: Text(widget.HelpName,
+                child: Text(widget.n,
                     style: GoogleFonts.faustina(
                       textStyle: TextStyle(
                           color: const Color.fromRGBO(119, 119, 119, 1),

@@ -28,6 +28,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "betterSleepingHabit":
             MessageLookupByLibrary.simpleMessage("عادة نوم أفضل"),
         "cardio": MessageLookupByLibrary.simpleMessage("جري"),
+        "changelanguage": MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
         "createYourAccount": MessageLookupByLibrary.simpleMessage("أنشئ حسابك"),
         "dontHaveAnAccountt":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟\t"),

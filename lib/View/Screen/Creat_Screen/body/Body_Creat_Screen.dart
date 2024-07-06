@@ -20,7 +20,7 @@ class BodyCreatScreen extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.only(top: height * 0.1,bottom:height*0.05),
+          padding: EdgeInsets.only(top: height * 0.1),
           child: Center(
             child: Text.rich(
               TextSpan(
@@ -58,7 +58,7 @@ class BodyCreatScreen extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(bottom: height * 0.05),
+          padding: EdgeInsets.only(bottom: height * 0.05,top: height * 0.1),
           child: Text(
             S.of(context).createYourAccount,
             style: GoogleFonts.faustina(
@@ -177,9 +177,9 @@ class BodyCreatScreen extends StatelessWidget {
             children: [
               const Spacer(flex: 3),
               LoginMeadi(
-                  colorContener: color.facebook, NameImage: 'fasbook.png'),
+                  colorContener: color.facebook, nameImage: 'fasbook.png'),
               const Spacer(),
-              LoginMeadi(colorContener: color.twitter, NameImage: 't.png'),
+              LoginMeadi(colorContener: color.twitter, nameImage: 't.png'),
               const Spacer(flex: 3),
             ],
           ),
